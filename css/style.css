@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #ffa2a2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+}
+
+footer a {
+    color: #eee;
+    font-size: 1.7rem;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .ft-title {
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.ft-main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 2.5rem;
+}
+
+.ft-main-item {
+    padding: 1.5rem;
+    min-width: 13rem;
+}
+
+@media (min-width:1500px) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width:500px) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+.ft-legal {
+    padding: 1rem 2rem;
+    background: #333;
+}
+
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ft-legal-list li {
+    margin-left: 1.5rem;
+    white-space: nowrap;
+}
+
+.ft-legal-list li:nth-child(2) {
+    flex: 1;
+}
